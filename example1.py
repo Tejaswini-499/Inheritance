@@ -10,7 +10,11 @@ class Product:
     print("Price: {}".format(self.price))
     print("Deal Price: {}".format(self.deal_price))
     print("Ratings: {}".format(self.ratings))
-    print("You Save : []".format(self.you_save)) 
+    print("You Save : []".format(self.you_save))
+class ElectronicItem(Product):
+  pass
+class Laptop(ElectronicItem):
+  pass
 p = Product("TV", 45000, 40000, 3.9)
 p.display_product_details()
           
